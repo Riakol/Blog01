@@ -50,7 +50,7 @@ def post_share(request, post_id):
         'blog/post/share.html',
         {
             'post': post,
-            'form': form
+            'form': form,
             'sent': sent
         }
     )
