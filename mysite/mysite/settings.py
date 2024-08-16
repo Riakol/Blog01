@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 from decouple import config
-from django.conf.global_settings import DEFAULT_FROM_EMAIL, EMAIL_HOST_USER, EMAIL_PORT, EMAIL_USE_TLS
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -29,7 +28,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-SITE_ID = 1
 
 # Application definition
 
@@ -39,14 +37,16 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.staticfiles',
     'django.contrib.sites',
     'django.contrib.sitemaps',
-    'django.contrib.staticfiles',
     
     'taggit',
     
     'blog.apps.BlogConfig',
 ]
+
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
