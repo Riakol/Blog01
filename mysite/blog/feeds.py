@@ -1,5 +1,3 @@
-from django.db.models import Model
-from django.utils.safestring import SafeText
 import markdown
 from django.contrib.syndication.views import Feed
 from django.template.defaultfilters import truncatewords_html
@@ -12,7 +10,7 @@ class LatestPostsFeed(Feed):
     link = reverse_lazy("blog:post_list")
     description = 'New posts'
 
-    def item(self):
+    def items(self):
         return Post.published.all()[:5]
     
     def item_title(self, item):
