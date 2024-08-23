@@ -4,6 +4,10 @@ __pycache__/
 .vscode
 .idea
 .env
+.dockerignore
+Dockerfile
+docker-compose.yml
+mysite_data.json
 
 db.sqlite3
 media/
