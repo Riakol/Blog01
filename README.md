@@ -11,12 +11,14 @@
 
 ## Technologies Used
 
-- **Django**.
+- **Django**: ORM, Admin, Templates, Forms.
 - **PostgreSQL**.
-- **Django ORM**.
-- **Django Admin**.
-- **Django Templates**.
-- **Django Forms**.
+- **Docker**.
+
+
 
 
 ![image](https://github.com/user-attachments/assets/c3ad2225-65a3-4c24-94f8-833c5de344b4)
+
+![image](https://github.com/user-attachments/assets/cbaa9c56-e230-46b2-b011-7ecc966d732f)
+
